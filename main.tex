@@ -1,0 +1,104 @@
+\documentclass[hyperref={colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}]{beamer}
+
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Madrid}       % or try default, Darmstadt, Warsaw, ...
+  % \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}    % or try default, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{chemfig}
+\usepackage[version=3]{mhchem}
+
+% On Overleaf, these lines give you sharper preview images.
+% You might want to `comment them out before you export, though.
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{resize to}[%
+%   physical paper width=8in, physical paper height=6in]
+
+% Here's where the presentation starts, with the info for the title slide
+\title[]{RATIONING MEDICINE THROUGH BUREAUCRACY: AUTHORIZATION RESTRICTIONS IN MEDICARE \\ 
+Brot-Goldberg et. al, 2023}
+\author{Han Zhang}
+\institute{UT Austin}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% These three lines create an automatically generated table of contents.
+\include{background}
+\include{innovation}
+\include{literature}
+
+\begin{frame}{Outline}
+  \tableofcontents
+
+\end{frame}
+
+\section{Prior Authorization Restrictions in Theory and Practice}
+\include{PAR-in-practice}
+
+\subsection{A Model of Prior Authorization Restriction}
+\include{model-PRA}
+\include{model-PRA2}
+\include{when-restrict-drugs}
+
+\section{Setting \& Data}
+% \subsection{Medicare Part D}
+
+\subsection{Data}
+\include{data}
+
+\subsection{Sample Selection}
+\include{data2}
+
+% \subsection{Prior Authorization in Medicare Part D}
+
+
+\section{the Effect on Drug Utilization}
+\include{AR-effect}
+\include{AR-effect-RD}
+\include{AR-effect-RD2}
+\include{main-estimates}
+\include{heter-effect1}
+\include{heter-effect2}
+
+\section{Substitution Patterns and Spending Effects}
+\include{substitution}
+\include{substituion2}
+\include{spending-effect}
+
+\section{Administrative Cost Burdens}
+\include{admin-cost}
+\include{admin-cost-calibration}
+
+
+\section{Welfare Effects}
+
+\subsection{Revealed Preference Approach}
+\include{wtp1}
+\include{wtp2}
+\include{wtp3}
+\include{wtp4}
+% \include{wtp5}
+
+\subsection{Health Effects}
+\include{case-study}
+\include{agg-health-effect}
+\include{agg-health-effect2}
+
+\section{Conclusion}
+\include{conclusion}
+
+\end{document}

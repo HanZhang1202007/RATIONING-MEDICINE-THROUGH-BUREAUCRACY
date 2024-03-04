@@ -1,0 +1,13 @@
+\begin{frame}{Welfare Effect: a Revealed Preference Approach}
+    leverage the transitions of 62,785 beneficiaries into the LIS as a source of exogenous variation \\
+    \begin{equation}
+        \log(E[Y_{idt}])=\frac{\epsilon}{100}P_{dt}\times NotLIS_{it} + \alpha_i + \gamma_{dmt} + \epsilon_{it}
+    \end{equation}
+    where $P_{dt}\times NotLIS_{it}$ is equal to the price of the drug d in year t for those not yet enrolled in the LIS program ($NotLIS_it$ = 1) and zero for those enrolled ($NotLIS_it$ = 0) \\
+    estimated by Poisson regression, the estimated $\epsilon = 0.15$ \\
+    assume the demand curve is $D_d(P_d) = D_d(0)e^{\frac{\epsilon}{100}P_d}$
+    then the distribution of $W_d$ is $$F_d(W)=1-D_d(0)e^{\frac{\epsilon}{100}W}$$
+    estimate $D_d(0)$ in simulation absent of restriction
+\end{frame}
+
+

@@ -1,0 +1,22 @@
+\begin{frame}{Effect of on Drug Utilization: Research Design}
+    estimating equations
+    \begin{equation}
+    \begin{aligned}
+        Y_{idt} & =\beta_1Auth^{Enrolled}_{idt}+\beta_2 Excl^{Enrolled}_{idt}+\kappa_{dm(it)}+\lambda_{j(it)m(it)} \\
+        &\gamma_1 Auth^{Sub,Assigned}_{j(it)dt} + \gamma_2 Excl^{Sub,Assigned}_{j(it)dt} + \nu_{idt}
+    \end{aligned}
+    \end{equation}
+    \begin{equation}
+        \begin{bmatrix}
+    Auth^{Enrolled} \\
+    Excl^{Enrolled}_{idt}
+        \end{bmatrix}
+        =
+        \begin{aligned}
+         & \delta_1Auth^{Enrolled}_{idt}+\delta_2 Excl^{Enrolled}_{idt}+K_{dm(it)}+\Lambda_{j(it)m(it)} \\
+        &\Gamma_1 Auth^{Sub,Assigned}_{j(it)dt} + \Gamma_2 Excl^{Sub,Assigned}_{j(it)dt} + u_{idt}
+        \end{aligned}
+    \end{equation}
+     $$$$
+     where the utilization outcome is a binary indicator for whether the beneficiary filled the drug at least once in the year.
+\end{frame}

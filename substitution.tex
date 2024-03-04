@@ -1,0 +1,7 @@
+\begin{frame}{Spending Effects: Estimating Substitution Patterns}
+    a discrete choice of a single drug within a therapeutic class for a given year:
+    $$u_{idt}= \underbrace{\beta_C Auth_{idt} + \delta_C Excl_{idt} + \kappa_{dm(it)}}_\text{$V_{idt}$} + \xi_{iCt}1\{d\neq 0\} + \lambda_{C\epsilon idt} $$
+    which implies a nested logit demand system. The probability of taking a drug is
+    $$P_{id}= \frac{\exp \frac{V_{idt}}{\lambda_C}(\Sigma_{k \in C} \exp \frac{V_{idt}}{\lambda_C})^{\lambda_C -1}}{1+(\Sigma_{k \in C} \exp \frac{V_{idt}}{\lambda_C})^{\lambda_C -1}}$$
+    with $1-\lambda_C$ governing the within-nest correlation of unobserved preferences
+\end{frame}
